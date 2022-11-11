@@ -5,7 +5,7 @@ export default function Home() {
   const handleLogout = () => {
     sessionStorage.removeItem("Auth Token");
     navigate("/login");
-  };
+  }
   let navigate = useNavigate();
   useEffect(() => {
     let authToken = sessionStorage.getItem("Auth Token");
